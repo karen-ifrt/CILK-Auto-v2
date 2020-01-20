@@ -1,0 +1,253 @@
+/***********************/
+/* RESET CSS */
+/***********************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a, a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+/***************/
+/* GENERAL */
+/**************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #333333;
+}
+
+
+#myBtn {
+  display: block; 
+  position: fixed; 
+  bottom: -100px;
+  right: 50px; 
+  z-index: 99; 
+  border: none;
+  outline: none; 
+  background-color: #aaa; 
+  cursor: pointer; 
+  padding: 8px 15px; 
+  border-radius: 100%; 
+  transition: all .5s ease-in-out;
+}
+
+#myBtn img {
+  width: 20px;
+  height: auto;
+}
+
+#myBtn:hover {
+  background-color: #0a0571;
+}
+
+.help-inline {
+	color: red;
+}
+
+
+/***************/
+/* INDEX */
+/**************/
+
+header p {
+	font-size: 1.7rem;
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: 120px;
+}
+
+#admin h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.title-cont {
+	background-color: #ddd;
+	padding: 20px 0;
+	margin-bottom: 30px;
+}
+
+table {
+	margin-top: 30px;
+}
+
+table th {
+	font-weight: bold;
+}
+
+.btn-occas {
+	margin-left: 10px;
+}
+
+/***************/
+/* AJOUT VEHICULE */
+/**************/
+
+.car-add {
+	margin-top: 50px;
+}
+
+.car-add form {
+	margin: 10px auto;
+	padding: 20px 50px;
+	box-shadow: 1px 1px 8px #d1d1d1;
+}
+
+.car-add form .form-group {
+	margin-top: 20px;
+}
+
+.car-add form .col {
+	margin-top: 20px;
+}
+
+.car-add form label {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+textarea {
+	resize: none;
+}
+
+/***************/
+/* VOIR VEHICULE */
+/**************/
+
+.car-view form {
+	width: 70%;
+	margin: 50px auto;
+	padding: 20px 50px;
+	box-shadow: 1px 1px 8px #d1d1d1;
+}
+
+
+.car-view label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.car-view h1 {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.car-view .form-img {
+	text-align: center;
+}
+
+.car-view img {
+	width: 400px;
+	height: auto;
+	margin-bottom: 20px;
+}
+
+.car-view .form-group {
+	margin-bottom: 10px;
+}
+.car-view .col {
+	margin-bottom: 10px;
+}
+
+.car-view pre {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.car-view .carousel {
+	margin: 0 auto 30px auto;
+	width: 600px;
+	min-height: 400px;
+    max-height: 400px;
+}
+
+.car-view .carousel-item img {
+    width: 600px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+
+
+/***************/
+/* MODIFIER VEHICULE */
+/**************/
+
+.car-update form {
+	margin: 50px auto;
+	padding: 20px 50px;
+	box-shadow: 1px 1px 8px #d1d1d1;
+}
+
+.car-update .form-group {
+	margin-bottom: 20px;
+}
+.car-update .col {
+	margin-bottom: 20px;
+}
+
+.car-update label {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+.car-update img {
+	width: 400px;
+	height: auto;
+	margin: 20px 0;
+}
+
+/***************/
+/* SUPPRIMER VEHICULE */
+/**************/
+
+.car-delete form {
+	margin: 50px auto;
+}

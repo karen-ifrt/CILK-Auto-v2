@@ -1,0 +1,964 @@
+/***********************/
+/* RESET CSS */
+/***********************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a, a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+/***********************/
+/* GENERAL */
+/***********************/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #333333;
+	margin-top: 135px;
+}
+
+
+#myBtn {
+  display: block; 
+  position: fixed; 
+  bottom: -100px; /* Place the button at the bottom of the page */
+  right: 50px; /* Place the button 30px from the right */
+  z-index: 99; 
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #aaa; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px 15px; /* Some padding */
+  border-radius: 100%; /* Rounded corners */
+  transition: all .5s ease-in-out;
+}
+
+#myBtn img {
+  width: 20px;
+  height: auto;
+}
+
+#myBtn:hover {
+  background-color: #0a0571;
+}
+
+/***********************/
+/* NAVBAR */
+/***********************/
+
+.navbar {
+	background-color: #fff;
+	box-shadow: 1px 1px 5px grey;
+}
+
+.navbar .navbar-brand img {
+	width: 140px;
+	height: auto;
+}
+
+.navbar ul {
+	margin: 0 auto;
+}
+
+.navbar li a {
+	color: #0A0571;
+	text-transform: uppercase;
+	transition: all .5s;
+	border-radius: 2px;
+    text-decoration: none;
+	padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.navbar li a:hover, .navbar-nav li .active {
+	color: #fff;
+	background-color: #0A0571;
+}
+
+.navbar .logo-expert {
+    margin-bottom: 5px;
+    width: 85px;
+    height: auto;
+}
+
+.navbar .logo-fiat {
+    width: 50px;
+    height: auto;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url(images/list-menu.svg);
+}
+
+.topnav img {
+	width: 20px;
+}
+
+.topnav-info {
+	display: flex;
+	padding: 10px 0;
+	font-size: 0.9rem;
+}
+
+.topnav-mail {
+	display: flex;
+	padding: 10px 0;
+}
+
+.topnav-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.topnav {
+	background-color: #0A0571;
+}
+
+.topnav a {
+	color: #fff;
+	text-decoration: none;
+	margin: 2px 0 0 10px;
+}
+
+.slideUp {
+	position: fixed;
+	top: 0;
+}
+
+
+/***********************/
+/* HOME SECTION */
+/***********************/
+
+#home {
+	position: relative;
+}
+
+#home .home-image {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(54, 54, 54, 0) 50%, rgba(28, 28, 28, 0)), url(images/background.jpg) center center / cover no-repeat;
+	background-attachment: scroll;
+	width: 100%;
+	height: 500px;
+}
+
+#home .home-content {
+	position: absolute;
+	top: 60px;
+	right: 50px;
+	border-top: 4px solid rgba(238, 238, 238, 0.85);
+	border-right: 4px solid rgba(238, 238, 238, 0.85);
+	border-left: 4px solid #0A0571;
+	border-bottom: 4px solid #0A0571;
+	border-radius: 2px;
+	padding: 30px;
+	color: #eee;
+	background: rgba(0, 0, 0, 0.5);
+	line-height: 1.25;
+	text-align: center;
+}
+
+#home .home-content h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+
+#home .home-content p {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+/***********************/
+/* ASSURANCES SECTION */
+/***********************/
+
+#assurances {
+	background: #e6e6e6;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 50px 0;
+}
+
+#assurances .assurances, #assurances .other-serv {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#assurances .other-serv img {
+	width: 90px;
+	height: auto;
+}
+
+
+#assurances ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#assurances img {
+	width: auto;
+	height: 40px;
+	padding-left: 8px;
+}
+
+#assurances .allianz {
+	width: auto;
+	height: 20px;
+	margin-top: 10px;
+}
+
+/***********************/
+/* CONTACT SECTION */
+/***********************/
+
+#contact {
+	background: #fff;
+	height: auto;
+	padding-bottom: 50px;
+}
+
+#contact .contact-content {
+	position: relative;
+}
+
+#contact h3 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding: 50px 0 8px 0;
+	font-weight: 600;
+}
+
+#contact p {
+	line-height: 1.35;
+}
+
+#contact img {
+	width: 50px;
+	position: absolute;
+	top: 50px;
+}
+
+#contact .contact-text {
+	margin-left: 80px;
+}
+
+#contact .contact-hours::before {
+	content: '› ';
+	color: #0A0571;
+	font-size: 18px;
+}
+
+#contact .itinerary::after {
+	content: ' ›';
+	color: #0A0571;
+	font-size: 18px;
+}
+
+#contact .small-divider {
+	width: 40px;
+	height: 2px;
+	background-color: #0A0571;
+	margin-bottom: 10px;
+}
+
+#contact a:hover {
+	color: #0A0571;
+	font-weight: 600;
+}
+
+/***********************/
+/* HOME SECTION */
+/***********************/
+
+#social {
+	background: #e6e6e6;
+	padding: 50px 0;
+}
+
+.jsx-4000353676 {
+	background-color: #ddd;
+	color: #333;
+}
+
+.eagr-button-component.jsx-523651046 {
+	color: #333!important;
+}
+
+.elfsight-app-86a632fb-201b-4827-b07d-e2083a54f23e {
+	max-width: 600px;
+}
+
+.eapps-widget-toolbar-panel-share-block {
+	display: none;
+}
+
+#social .review-title h3 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+#social .small-divider {
+	width: 40px;
+	height: 3px;
+	background-color: #0A0571;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/***********************/
+/* FORMULAIRE */
+/***********************/
+
+#formulaire {
+	background-color: #eee;
+	padding: 50px 0;
+}
+
+#formulaire h3 {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+#formulaire .small-divider {
+	width: 40px;
+	height: 3px;
+	background-color: #0A0571;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#formulaire textarea { 
+	resize: none;
+	margin-top: 20px;
+}
+
+#formulaire .form-input {
+	margin-top: 20px;
+}
+
+#formulaire .input-group-text {
+	max-height: 38px;
+	margin-top: 20px;
+}
+
+#formulaire .btn-contact {
+	border: 1px solid #0A0571;
+	background-color: #0A0571;
+	color: #fff;
+	padding: 12px;
+	transition: all .5s;
+	text-transform: uppercase;
+	border-radius: 5px;
+}
+
+#formulaire .btn-contact:hover {
+	background-color: rgb(67, 62, 158);
+}
+
+#formulaire .contact-content {
+	display: flex;
+	margin-top: 30px;
+}
+
+#formulaire .contact-content img {
+	width: 50px;
+	margin-right: 30px;
+}
+
+#formulaire .contact-content p:first-child {
+	margin-bottom: 10px;
+}
+
+#formulaire .contact-content a:hover {
+	color: #0A0571;
+}
+
+
+/***********************/
+/* OCCASIONS SECTION */
+/***********************/
+
+.occasions-title {
+ background-color: #ddd;
+ padding: 25px 0;
+ margin-bottom: 30px;
+ margin-top: 145px;
+}
+
+#occasions h3 {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.thumbnail {
+	display: flex;
+	padding: 10px;
+	background-color: #fff;
+	box-shadow: 1px 1px 10px #d1d1d1;
+	border-radius: 3px;
+	margin: 20px 0;
+	min-height: 220px;
+	max-height: 220px;
+}
+
+.thumbnail img {
+	width: 250px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.thumbnail .car-img {
+	margin: auto 0;
+}
+
+#occasions h4 {
+	font-size: 1rem;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.caption div {
+	margin-bottom: 5px;
+}
+
+.caption {
+	padding: 20px 20px;
+}
+
+.caption .annee {
+	margin-bottom: 30px;
+}
+
+.caption .btn-more {
+	border: 1px solid #0A0571;
+	color: #fff;
+	background-color: #0A0571;
+	border-radius: 3px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	transition: all .5s;
+}
+.caption .btn-more:hover {
+	color: #fff;
+	background-color: #070349;
+}
+
+/***********************/
+/* FICHE VOITURE */
+/***********************/
+
+.car-info h2 {
+	font-size: 2.2rem;
+	text-transform: uppercase;
+	margin-top: 180px;
+	margin-bottom: 40px;	
+	background: #f2f2f2;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 20px;
+}
+
+.car-info .car-image img {
+	width: 500px;
+	height: auto;
+}
+
+.btn-return {
+	border: 1px solid #0A0571;
+	color: #fff;
+	background-color: #0A0571;
+	border-radius: 3px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	transition: all .5s;
+	margin: 20px 0;
+}
+
+.btn-return:hover {
+	color: #fff;
+	background-color: #070349;
+}
+
+table tr td:first-child {
+	font-weight: bold;
+}
+
+table tr td {
+	padding: 15px;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #ddd;
+}
+
+.car-item {
+	margin-top: 30px;
+}
+
+.car-info pre {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.car-item p {
+	font-weight: bold;
+}
+
+/***********************/
+/* SECTION CAMPING-CAR */
+/***********************/
+
+#campingcar .camping-title {
+    background-color: #ddd;
+    padding: 25px 0;
+    margin-bottom: 30px;
+    margin-top: 145px;
+}
+
+#campingcar .camping-title h3 {
+	text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#campingcar .camping-img img {
+	width: 500px;
+}
+
+/***********************/
+/* SECTION SERVICES */
+/***********************/
+
+#services h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#services .service {
+	border: 4px solid transparent;
+	text-align: center;
+	box-shadow: 1px 1px 10px #d1d1d1;
+	border-radius: 3px;
+	padding: 50px 0;
+	height: 200px;
+	cursor: pointer;
+	filter: grayscale(100%);
+	transition: all .3s;
+	margin-bottom: 40px;
+}
+
+#services img {
+	width: 80px;
+	height: auto;
+	margin-top: 10px;
+}
+
+#services .service:hover {
+	filter: none;
+	border: 4px solid #0A0571;
+}
+
+#services .repair-img {
+	margin-top: 0;
+	width: 90px;
+}
+
+#services .card-img {
+	width: 60px;
+	height: auto;
+	margin-top: 20px;
+}
+
+#services h4 {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+#services .modal-title {
+	font-size: 1.8rem;
+}
+
+#services .btn-close {
+	border: 1px solid #0A0571;
+	background-color: #0A0571;
+	color: #fff;
+	padding: 5px 8px;
+	transition: all .5s;
+	border-radius: 3px;
+}
+
+#services .btn-close:hover {
+	background-color: rgb(97, 91, 197);
+}
+
+#services li::before {
+	content: '✔ ';
+	color: #0A0571;
+}
+
+#services .content-repair li {
+	line-height: 1.3;
+}
+
+#services .modal-header h4 {
+	margin-left: 30px;
+}
+
+#services .modal-body {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#services .image-repair img {
+	width: 400px;
+}
+
+#services .service-carte-grise img {
+	width: 200px;
+}
+
+#services .content-carte p {
+	line-height: 2;
+}
+
+#services .pieces-carte {
+	margin-top: 20px;
+}
+
+#services .content-pieces p {
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+/***********************/
+/* PAGE ENTRETIEN ET REPARATION */
+/***********************/
+
+#entretien h3 {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#entretien .revision {
+	border: 1px solid #e7e8e9;
+	background: #e7e8e9;
+	text-align: center;
+	padding: 10px 0 60px 0;
+	min-height: 250px;
+	max-height: 250px;
+	border-radius: 5px;
+}
+
+
+#entretien .repair-img {
+	width: 90px;
+}
+
+#entretien h2 {
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-size: 1.1rem;
+	line-height: 0.5;
+	font-weight: bold;
+	color: #0A0571;
+}
+
+#entretien .row-two {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#entretien .rev-content {
+	border-radius: 5px;
+	margin: 10px 20px 0 30px;
+	padding: 10px;
+	text-align: left;
+	line-height: 1.5;
+}
+
+#entretien .rev-content p {
+	font-size: 0.9rem;
+}
+
+#entretien .rev-content p::before {
+	content: '✔ ';
+	color: #0A0571;
+}
+
+
+/***********************/
+/* FOOTER */
+/***********************/
+
+footer .small-divider {
+	width: 40px;
+	height: 3px;
+	background-color: #000;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: #545454;
+	color: #eee;
+}
+
+.footer-credits {
+	background-color: #000;
+	font-size: 0.8rem;
+	color: #eee;
+	font-weight: 300;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.footer-all {
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+}
+
+.footer-title {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.footer-column {
+	line-height: 1.3;
+	font-weight: 300;
+}
+
+
+
+
+
+
+
+@media (max-width: 576px) { 
+
+ }
+
+@media (max-width: 768px) { 
+
+	/* HOME */
+	
+	#home .home-content {
+	top: 340px;
+	right: 30px;
+	left: 30px;
+	padding: 20px;
+	line-height: 1.25;
+	}
+
+	#home .home-content h1 {
+	font-size: 1.2rem;
+	}
+
+	#home .home-content p {
+	font-size: 0.80rem;
+	}	
+
+	#assurances h2 {
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	#assurances .other-serv h2 {
+		margin-top: 30px;
+	}
+
+	#assurances ul {
+		display: flex;
+		justify-content: center;
+	}
+
+	#contact {
+		padding: 30px 0;
+	}
+
+	#contact h3, #social h3 {
+		font-size: 1rem;
+		padding: 15px 0 10px 0;
+	}
+
+	#contact p {
+		font-size: 0.9rem;
+	}
+
+	#contact .contact-content {
+		position: static;
+		text-align: center;
+	}
+
+	#contact img {
+		position: static;
+		padding-top: 15px;
+	}
+
+	#contact .small-divider {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	#contact .contact-text {
+		margin-left: 0;
+	}
+
+	/* SOCIAL */
+
+	#social {
+		text-align: center;
+	}
+
+	#social .small-divider {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	#social .fb-page {
+		width: 100%;
+	}
+
+	#social .network .review-title {
+		margin-top: 30px;
+	}
+
+	/* FORMULAIRE */
+
+	.map {
+		margin-top: 50px;
+	}
+
+	#formulaire .map iframe {
+		width: 100%;
+	}
+
+	/* OCCASIONS */
+
+	#occasions .thumbnail {
+		display: block;
+		min-height: 550px;
+	}
+	.thumbnail img {
+		width: 100%;
+	}
+
+	/* FOOTER */
+	.footer-all {
+		display: block;
+		text-align: center;
+	}
+	footer .small-divider {
+		margin: 10px auto;
+	}
+
+	.footer-column {
+		margin-bottom: 30px;
+	}
+
+	/* ENTRETIEN ET REPARATION */
+
+	#entretien .occasions-title {
+		margin-bottom: 0;
+	}
+
+	#entretien .revision {
+		margin-top: 20px;
+	}
+
+	#entretien .row-two {
+    margin-top: 0;
+}
+
+
+ }
+
+@media (max-width: 992px) { 
+    .logos-nav {
+   		display: none;
+	}
+	
+	#occasions .thumbnail {
+		display: block;
+		max-height: 450px;
+	}
+
+	#occasions .thumbnail img {
+		width: 100%;
+	}
+
+
+ }
+
+@media (max-width: 1200px) { 
+	#formulaire iframe {
+		width: 100%;
+	}
+
+	#occasions .btn-more {
+		font-size: 0.9rem;
+	}
+
+	#social .fb-page {
+		width: 100%;
+	}
+	
+ }
