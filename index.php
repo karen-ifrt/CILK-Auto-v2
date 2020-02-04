@@ -5,7 +5,19 @@
     ?>
 
     <section id="home">
-        <div class="home-image"></div>
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/background.jpg" alt="Fiat 500">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/fiat_utilitaire.jpg" alt="Fiat utilitaire">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/fiat_campingcar.jpg" alt="Fiat Ducato">
+                </div>
+            </div>
+        </div>
         <div class="home-content">
             <h1>Réparations toutes marques</h1>
             <p>Mécanique, carrosserie, vente V.N. & V.O.</p>
@@ -35,6 +47,7 @@
                         <h2>Nos services</h2>
                         <ul>
                             <li><img src="images/assurances/carte-grise.png" alt="Carte grise"></li>
+                            <li class="allservices"><a href="services.php">Tous nos services</a></li>
                         </ul>
                     </div>
                 </div>

@@ -38,7 +38,7 @@ if (empty($_SESSION['username'])) {
 
         <nav class="navbar navbar-expand-lg" id="navigation">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../images/logo-CILK.png" alt="Logo"></a>
+                <a class="navbar-brand" href="index.php"><img src="../images/logo-CILK.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -59,7 +59,7 @@ if (empty($_SESSION['username'])) {
         $id = checkInput($_GET['id']);
     }
 
-    $titleError = $marqueError = $modeleError = $id_refError = $priceError = $kmError = $colorError = $anneeError = $chevauxError = $carbError = $wearboxError = $imagesError = $title = $marque = $modele = $id_ref = $id_num = $price = $km = $color = $annee = $chevaux = $carb = $wearbox = $options = $comments = $images = "";
+    $titleError = $marqueError = $modeleError = $id_refError = $priceError = $kmError = $colorError = $anneeError = $chevauxError = $carbError = $wearboxError = $imagesError = $title = $marque = $modele = $id_ref = $id_num = $price = $km = $color = $annee = $chevaux = $carb = $wearbox = $options = $comments = $myImage = "";
 
     if (!empty($_POST)) {
         $title = checkInput($_POST['title']);
@@ -67,7 +67,6 @@ if (empty($_SESSION['username'])) {
         $modele = checkInput($_POST['modele']);
         $id_ref = checkInput($_POST['ref']);
         $id_num = checkInput($_POST['number']);
-
         $price = checkInput($_POST['price']);
         $km = checkInput($_POST['km']);
         $color = checkInput($_POST['color']);
@@ -77,9 +76,10 @@ if (empty($_SESSION['username'])) {
         $wearbox = checkInput($_POST['wearbox']);
         $options = checkInput($_POST['options']);
         $comments = checkInput($_POST['comments']);
-        $images = checkInput($_FILES['images']['name']);
-        $imagesPath = '../images/' . basename($images);
-        $imagesExtension = pathinfo($imagesPath, PATHINFO_EXTENSION);
+        $myImage = $_FILES['images']['name'][0];
+        // $images = checkInput($_FILES['images']['name']);
+        // $imagesPath = '../images/' . basename($myImage);
+        // $imagesExtension = pathinfo($imagesPath, PATHINFO_EXTENSION);
         $isSuccess = true;
 
         if (empty($title)) {
@@ -126,50 +126,75 @@ if (empty($_SESSION['username'])) {
             $wearboxError = "Ce champ est obligatoire";
             $isSuccess = false;
         }
-        if (empty($images)) {
+        if (empty($myImage)) {
             $isImageUpdated = false;
         } else {
             $isImageUpdated = true;
 
             $isUploadSuccess = true;
-            if ($imagesExtension != "jpg" && $imagesExtension != "png" && $imagesExtension != "jpeg" && $imagesExtension != "gif") {
-                $imagesError = "Les fichiers autorisés sont: .jpg, .png, .gif";
-                $isUploadSuccess = false;
-            }
-            if (file_exists($imagesPath)) {
-                $imagesError = "Le fichier existe déjà";
-                $isUploadSuccess = false;
-            }
-            if ($_FILES["images"]["size"] > 500000) {
-                $imagesError = "Le fichier ne doit pas dépasser les 500KB";
-                $isUploadSuccess = false;
-            }
-            if ($isUploadSuccess) {
-                if (!move_uploaded_file($_FILES["images"]["tmp_name"], $imagesPath)) {
-                    $imagesError = "Il y a eu une erreur lors de l'upload";
-                    $isUploadSuccess = false;
-                }
-            }
+            // if ($imagesExtension != "jpg" && $imagesExtension != "png" && $imagesExtension != "jpeg" && $imagesExtension != "gif") {
+            //     $imagesError = "Les fichiers autorisés sont: .jpg, .png, .gif";
+            //     $isUploadSuccess = false;
+            // }
+            // if (file_exists($imagesPath)) {
+            //     $imagesError = "Le fichier existe déjà";
+            //     $isUploadSuccess = false;
+            // }
+            // if ($_FILES["images"]["size"] > 500000) {
+            //     $imagesError = "Le fichier ne doit pas dépasser les 500KB";
+            //     $isUploadSuccess = false;
+            // }
+            // if ($isUploadSuccess) {
+            //     if (!move_uploaded_file($_FILES["images"]["tmp_name"], $imagesPath)) {
+            //         $imagesError = "Il y a eu une erreur lors de l'upload";
+            //         $isUploadSuccess = false;
+            //     }
+            // }
         }
 
         if (($isSuccess && $isImageUpdated && $isUploadSuccess) || ($isSuccess && !$isImageUpdated)) {
             $db = Database::connect();
             if ($isImageUpdated) {
                 $statement = $db->prepare("UPDATE voitures set title = ?, marque = ?, modele = ?, id_ref = ?, id_num = ?, price = ?, km = ?, color = ?, annee = ?, chevaux = ?, carb = ?, wearbox = ?, options = ?, comments = ?, images = ? WHERE id = ?");
-                $statement->execute(array($title, $marque, $modele, $ref, $price, $km, $color, $annee, $chevaux, $carb, $wearbox, $options, $comments, $images, $id));
+                $statement->execute(array($title, $marque, $modele, $id_ref, $id_num, $price, $km, $color, $annee, $chevaux, $carb, $wearbox, $options, $comments, $myImage, $id));
+
+                $imgCount = count($_FILES['images']['name']);
+
+                for ($i = 0; $i < $imgCount; $i++) {
+                    $lesImages = $_FILES['images']['name'];
+                    $imagesPath = '../images/' . basename($lesImages[$i]);
+
+                    // Insertion nouvelles images
+                    $stm = $db->prepare('INSERT INTO images (name) VALUES (?)');
+                    $stm->execute(array($lesImages[$i]));
+
+                    move_uploaded_file($_FILES["images"]["tmp_name"][$i], $imagesPath);
+                }
+
+                //Récupération des ID des dernières images
+                $stm = $db->prepare('SELECT id FROM images ORDER BY id DESC LIMIT ' . count($_FILES['images']['name']));
+                $stm->execute();
+                $img = $stm->fetchAll();
+
+                // Suppression des anciennes images
+                $stm = $db->prepare("DELETE FROM relation WHERE id_voiture = ?");
+                $stm->execute(array($id));
+
+                // Ajout des nouvelles images
+                foreach ($img as $value) {
+                    $value_id = $value['id'];
+                    $statement = $db->prepare('INSERT INTO relation (id_voiture, id_images) VALUES (?, ?)');
+                    $statement->execute(array($id, $value_id));
+                }
+
+
+
             } else {
                 $statement = $db->prepare("UPDATE voitures set title = ?, marque = ?, modele = ?, id_ref = ?, id_num = ?, price = ?, km = ?, color = ?, annee = ?, chevaux = ?, carb = ?, wearbox = ?, options = ?, comments = ? WHERE id = ?");
                 $statement->execute(array($title, $marque, $modele, $id_ref, $id_num, $price, $km, $color, $annee, $chevaux, $carb, $wearbox, $options, $comments, $id));
             }
             Database::disconnect();
             header("Location: index.php");
-        } else if ($isImageUpdated && !$isUploadSuccess) {
-            $db = Database::connect();
-            $statement = $db->prepare("SELECT images FROM voitures where id = ?");
-            $statement->execute(array($id));
-            $item = $statement->fetch();
-            $images = $item['images'];
-            Database::disconnect();
         }
     } else {
         $db = Database::connect();
@@ -190,7 +215,7 @@ if (empty($_SESSION['username'])) {
         $wearbox = $item['wearbox'];
         $options = $item['options'];
         $comments = $item['comments'];
-        $images = $item['images'];
+        $myImage = $item['images'];
 
 
         Database::disconnect();
@@ -231,8 +256,7 @@ if (empty($_SESSION['username'])) {
                 <div class="row">
                     <div class="col">
                         <label for="ref">Référence (marque) :</label>
-                        <select disabled class="form-control" id="ref" name="ref">
-                            <option value="0">Sélectionnez une marque</option>
+                        <select readonly class="form-control" id="ref" name="ref">
                             <?php
                             $db = Database::connect();
                             foreach ($db->query('SELECT * FROM reference ORDER BY name ASC') as $row) {
@@ -248,7 +272,7 @@ if (empty($_SESSION['username'])) {
                     </div>
                     <div class="col">
                         <label for="number">Référence (numéro) :</label>
-                        <select disabled name="number" id="number" class="form-control">
+                        <select readonly name="number" id="number" class="form-control">
                             <?php
 
 
@@ -259,7 +283,7 @@ if (empty($_SESSION['username'])) {
 
                             foreach ($stm as $row) {
                                 var_dump($row);
-                                echo '<option value="' . $row['id_num'] . '">' . $row['MAX(number.value)'] . '</option>';
+                                echo '<option selected="selected" value="' . $row['id_num'] . '">' . $row['MAX(number.value)'] . '</option>';
                             }
 
 
@@ -365,13 +389,8 @@ if (empty($_SESSION['username'])) {
                     <textarea type="text" class="form-control" id="comments" name="comments" rows="2"><?php echo $comments; ?></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Image :</label>
-                    <p><?php echo $images; ?></p>
-                    <div class="form-img-update">
-                        <img class="img-form" src="<?php echo '../images/' . $images; ?>">
-                    </div>
-                    <label for="images">Sélectionner une nouvelle image :</label>
-                    <input type="file" id="images" name="images">
+                    <label for="images">Sélectionner des nouvelles images :</label>
+                    <input type="file" id="images" name="images[]" multiple>
                     <br>
                     <span class="help-inline"><?php echo $imagesError; ?></span>
                 </div>

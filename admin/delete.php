@@ -37,7 +37,7 @@
 
            <nav class="navbar navbar-expand-lg" id="navigation">
                <div class="container">
-                   <a class="navbar-brand" href="#"><img src="../images/logo-CILK.png" alt="Logo"></a>
+                   <a class="navbar-brand" href="index.php"><img src="../images/logo-CILK.png" alt="Logo"></a>
                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                        <span class="navbar-toggler-icon"></span>
                    </button>
@@ -63,6 +63,8 @@
             $db = Database::connect();
             $statement = $db->prepare("DELETE FROM voitures WHERE id = ?");
             $statement->execute(array($id));
+            $stm = $db->prepare("DELETE FROM relation WHERE id_voiture = ?");
+            $stm->execute(array($id));
             Database::disconnect();
             header("Location: index.php");
         }

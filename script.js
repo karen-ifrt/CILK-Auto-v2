@@ -51,3 +51,14 @@ let selects = document.querySelectorAll('.linked-select')
 selects.forEach(function (select) {
     new LinkedSelect(select)
 })
+
+// Full screen on click
+
+// let elem = document.querySelectorAll('.carousel-full');
+
+
+// for (let i = 0; i < elem.length; i++) {
+//     elem[i].addEventListener('click', function () {
+//         elem[i].requestFullscreen();
+//     });    
+// }

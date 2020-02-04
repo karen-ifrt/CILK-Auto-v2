@@ -75,21 +75,18 @@
                     <div class="modal-dialog modal-xl modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h4 class="modal-title">Pré-contrôle technique</h4>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
                             <div class="modal-body">
                                 <div class="content-repair">
-                                    <p>Le pré-contrôle technique est une sécurité pour éviter toute déconvenue lors du passage de votre véhicule en contrôle technique.</p>
-                                    <p>Le Garage CILK AUTO vous propose une révision complète de votre véhicule en vue du contrôle technique. </p>
+                                    <h4>Pré-contrôle technique</h4>
+                                    <p>Le pré-contrôle technique est une sécurité pour éviter toute déconvenue lors du passage de votre véhicule en contrôle technique. Le garage CILK AUTO vous propose une révision complète de votre véhicule en vue du contrôle technique. </p>
                                 </div>
-                            </div>
-                            <div class="modal-header">
-                                <h4 class="modal-title">Contrôle technique</h4>
                             </div>
                             <div class="modal-body">
                                 <div class="content-repair">
-                                    <p>Dans la continuité de la révision complète de votre véhicule nous vous proposons de présenter votre véhicule dans un centre agrée de Contrôle Technique.</p>
+                                    <h4>Contrôle technique</h4>
+                                    <p>Dans la continuité de la révision complète de votre véhicule nous vous proposons de présenter votre véhicule dans un centre agréé de Contrôle Technique.</p>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -175,39 +172,6 @@
                     <div class="service">
                         <h4>Service à domicile</h4>
                         <img class="repair-img" src="images/car-restitution.svg" alt="Réparations">
-                    </div>
-                </div>
-
-                <div class="modal fade" id="myModal">
-                    <div class="modal-dialog modal-xl modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Réparation et entretien</h4>
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="image-repair">
-                                    <img src="images/repair-car.jpg" alt="">
-                                </div>
-                                <div class="content-repair">
-                                    <p>Nous réalisons les prestations ci-dessous pour les véhicules toutes marques:</p>
-                                    <br>
-                                    <ul>
-                                        <li>Mécanique</li>
-                                        <li>Révision</li>
-                                        <li>Vidange</li>
-                                        <li>Freinage</li>
-                                        <li>Distribution</li>
-                                        <li>Climatisation</li>
-                                        <li>Pré-contrôle technique</li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-close" data-dismiss="modal">Fermer</button>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

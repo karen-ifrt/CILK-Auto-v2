@@ -181,11 +181,34 @@ body {
 	position: relative;
 }
 
-#home .home-image {
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(54, 54, 54, 0) 50%, rgba(28, 28, 28, 0)), url(images/background.jpg) center center / cover no-repeat;
-	background-attachment: scroll;
+#home .carousel-item {
 	width: 100%;
 	height: 500px;
+}
+
+#home .carousel-item img {
+ 	height: 100%;
+ 	object-fit: cover;
+}
+
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: 1s;
+	transition-property: opacity;
+}
+.carousel-fade  .carousel-item.active,.carousel-fade
+.carousel-item-next.carousel-item-left,.carousel-fade
+.carousel-item-prev.carousel-item-right {
+	opacity: 1;
+}
+.carousel-fade .active.carousel-item-left,.carousel-fade  .active.carousel-item-right {
+	opacity: 0;
+}
+.carousel-fade  .carousel-item-next,.carousel-fade .carousel-item-prev,.carousel-fade
+.carousel-item.active,.carousel-fade .active.carousel-item-left,.carousel-fade
+.active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
 }
 
 #home .home-content {
@@ -202,6 +225,7 @@ body {
 	background: rgba(0, 0, 0, 0.5);
 	line-height: 1.25;
 	text-align: center;
+	z-index: 98;
 }
 
 #home .home-content h1 {
@@ -236,12 +260,29 @@ body {
 	height: auto;
 }
 
+#assurances .other-serv .allservices {
+	font-size: 0.8rem;
+	margin-left: 50px;
+
+}
+
+#assurances .other-serv .allservices a {
+	border: 1px solid #0A0571;
+	padding: 10px;
+	background-color: #0A0571;
+	color: #fff;
+}
+
+#assurances .other-serv .allservices a:hover{
+	background-color: #070349;
+}
 
 #assurances ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 20px;
+	align-items: center;
 }
 
 #assurances img {
@@ -403,7 +444,7 @@ body {
 }
 
 #formulaire .btn-contact:hover {
-	background-color: rgb(67, 62, 158);
+	background-color: #070349;
 }
 
 #formulaire .contact-content {
@@ -558,6 +599,19 @@ table {
 	font-weight: bold;
 }
 
+.car-info .modal-dialog {
+	max-width: 80%!important;
+}
+
+.car-info .modal-dialog img {
+	width: 100%;
+	height: auto;
+}
+
+.car-info .carousel {
+	cursor: zoom-in;
+}
+
 /***********************/
 /* SECTION CAMPING-CAR */
 /***********************/
@@ -565,7 +619,6 @@ table {
 #campingcar .camping-title {
     background-color: #ddd;
     padding: 25px 0;
-    margin-bottom: 30px;
     margin-top: 145px;
 }
 
@@ -576,7 +629,41 @@ table {
 }
 
 #campingcar .camping-img img {
-	width: 500px;
+	width: 100%;
+}
+
+#campingcar ul li::before {
+	content: '✔ ';
+	color: #0A0571;
+}
+
+#campingcar .camping-content {
+	background-color: #e7e8e9;
+	padding: 20px 0;
+}
+
+#campingcar .camping-content h4 {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+#campingcar .btn-contact {
+	margin: 0 auto;
+}
+
+#campingcar .btn-contact a {	
+	border: 1px solid #0A0571;
+	color: #fff;
+	background-color: #0A0571;
+	border-radius: 3px;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	transition: all .5s;
+}
+
+#campingcar .btn-contact a:hover {
+	color: #fff;
+	background-color: #070349;
 }
 
 /***********************/
@@ -685,6 +772,14 @@ table {
 #services .content-pieces p {
 	margin: 20px 0;
 	font-weight: bold;
+}
+
+#modalControle h4 {
+	margin-bottom: 10px;
+}
+
+#modalControle .modal-body {
+	margin: 0 80px;
 }
 
 /***********************/

@@ -39,7 +39,7 @@ if (empty($_SESSION['username'])) {
         <nav class="navbar navbar-expand-lg" id="navigation">
             <div class="container">
 
-                <a class="navbar-brand" href="#"><img src="../images/logo-CILK.png" alt="Logo"></a>
+                <a class="navbar-brand" href="index.php"><img src="../images/logo-CILK.png" alt="Logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -249,7 +249,6 @@ if (empty($_SESSION['username'])) {
                                 $voitures = $db->query('SELECT * FROM reference');
 
                                 foreach ($voitures as $voiture) {
-
                                     echo '<option value="' . $voiture['id'] . '">' . $voiture['name'] . '</option>';
                                 }
                                 ?>
@@ -265,38 +264,38 @@ if (empty($_SESSION['username'])) {
                             </select>
 
                             <!-- <select readonly name="number" id="number" class="form-control"> -->
-                                <!-- <option value="0">Sélectionnez un nombre</option> -->
-                                <?php
+                            <!-- <option value="0">Sélectionnez un nombre</option> -->
+                            <?php
 
-                                // $db = Database::connect();
-                                // $stm = $db->prepare("SELECT voitures.id_num, voitures.id_ref, MAX(number.value), number.id FROM voitures INNER JOIN reference ON voitures.id_ref = reference.id INNER JOIN number ON voitures.id_num = number.id WHERE reference.id = ?");
-                                // $stm->execute(array($id_ref));
-                                // Database::disconnect();
-
-
-                                // // Incrémente de 1 les numéros en fonction de la marque
-                                // foreach ($stm as $key) {
-                                //     $keyplus = $key["MAX(number.value)"] + 1;
-                                // };
-
-                                // echo '<option value="' . $key['id'] . '">' . $keyplus . '</option>';
-                                // // echo '<input readonly class="form-control" type="number" id="number" name="number" value="' . $keyplus . '">';
-                                // // };
-                                // // Vérif numéro existant
-                                // $db = Database::connect();
-                                // $stmt = $db->prepare("SELECT * FROM number WHERE value = ?");
-                                // $stmt->execute(array($keyplus));
-                                // $numero = $stmt->fetch();
-                                // Database::disconnect();
+                            // $db = Database::connect();
+                            // $stm = $db->prepare("SELECT voitures.id_num, voitures.id_ref, MAX(number.value), number.id FROM voitures INNER JOIN reference ON voitures.id_ref = reference.id INNER JOIN number ON voitures.id_num = number.id WHERE reference.id = ?");
+                            // $stm->execute(array($id_ref));
+                            // Database::disconnect();
 
 
-                                // if ($numero) {
-                                //     // "Numéro déjà dans la base";
-                                // } else {
-                                //     $statement = $db->prepare("INSERT INTO number (value) VALUES (?)");
-                                //     $statement->execute(array($keyplus));
-                                // }
-                                ?>
+                            // // Incrémente de 1 les numéros en fonction de la marque
+                            // foreach ($stm as $key) {
+                            //     $keyplus = $key["MAX(number.value)"] + 1;
+                            // };
+
+                            // echo '<option value="' . $key['id'] . '">' . $keyplus . '</option>';
+                            // // echo '<input readonly class="form-control" type="number" id="number" name="number" value="' . $keyplus . '">';
+                            // // };
+                            // // Vérif numéro existant
+                            // $db = Database::connect();
+                            // $stmt = $db->prepare("SELECT * FROM number WHERE value = ?");
+                            // $stmt->execute(array($keyplus));
+                            // $numero = $stmt->fetch();
+                            // Database::disconnect();
+
+
+                            // if ($numero) {
+                            //     // "Numéro déjà dans la base";
+                            // } else {
+                            //     $statement = $db->prepare("INSERT INTO number (value) VALUES (?)");
+                            //     $statement->execute(array($keyplus));
+                            // }
+                            ?>
                             <!-- </select> -->
                         </div>
                     </div>
@@ -380,7 +379,8 @@ if (empty($_SESSION['username'])) {
                         <br>
                         <input type="file" id="images" name="images[]" multiple>
                         <br>
-                        <!-- <span class="help-inline"><?php // echo $imagesError; ?></span> -->
+                        <!-- <span class="help-inline"><?php // echo $imagesError; 
+                                                        ?></span> -->
                     </div>
 
                     <div class="form-actions-add">

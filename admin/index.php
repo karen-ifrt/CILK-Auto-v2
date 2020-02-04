@@ -68,7 +68,6 @@ if (empty($_SESSION['username'])) {
                     <thead>
                         <tr>
                             <th>Véhicule</th>
-                            <!-- <th>Référence</th> -->
                             <th>Prix</th>
                             <th>Kilomètres</th>
                             <th>Année</th>
