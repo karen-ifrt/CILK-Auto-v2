@@ -52,13 +52,40 @@ selects.forEach(function (select) {
     new LinkedSelect(select)
 })
 
-// Full screen on click
 
-// let elem = document.querySelectorAll('.carousel-full');
+// AJAX Formulaire 
 
 
-// for (let i = 0; i < elem.length; i++) {
-//     elem[i].addEventListener('click', function () {
-//         elem[i].requestFullscreen();
-//     });    
-// }
+$(function () {
+
+    $('#contact-form').submit(function (e) {
+
+        e.preventDefault();
+        $('.error').empty();
+        let postdata = $('#contact-form').serialize();
+
+        $.ajax({
+            type: 'POST',
+            url: 'verif.php',
+            data: postdata,
+            dataType: 'json',
+            success: function (result) {
+                if (result.isSuccess) {
+                    $("#contact-form").append("<p class='thank-you'>Votre message a bien été envoyé.</p>");
+                    $("#contact-form")[0].reset();
+                }
+                else {
+                    $("#prenom ~ .error").html(result.prenomError);
+                    $("#nom ~ .error").html(result.nomError);
+                    $("#mail ~ .error").html(result.mailError);
+                    $("#telephone ~ .error").html(result.telephoneError);
+                    $("#message ~ .error").html(result.messageError);
+                }
+            }
+        });
+
+    });
+
+
+
+})

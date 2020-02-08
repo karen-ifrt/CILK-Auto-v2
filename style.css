@@ -465,6 +465,17 @@ body {
 	color: #0A0571;
 }
 
+#formulaire .error {
+	color: red;
+}
+
+#formulaire .thank-you {
+	color: rgb(52, 109, 52);
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
+}
+
 
 /***********************/
 /* OCCASIONS SECTION */
@@ -1052,6 +1063,14 @@ footer {
 
 	#formulaire .map iframe {
 		width: 100%;
+	}
+
+	#formulaire form .row {
+		display: flex;
+		flex-direction: column;
+	}
+	#formulaire form .row #nom {
+		margin-top: 20px;
 	}
 
 	/* OCCASIONS */
