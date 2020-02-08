@@ -29,7 +29,7 @@
                             <li>Climatisation</li>
                         </ul>
                     </div>
-                    <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-md-6 d-flex align-items-center bouton-contact">
                         <div class="btn-contact">
                             <a href="contact.php">Nous contacter</a>
                         </div>

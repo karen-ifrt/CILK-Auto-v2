@@ -881,8 +881,76 @@ footer {
 	font-weight: 300;
 }
 
+.footer-credits a:hover {
+	color: #aaa;
+}
 
+/***********************/
+/* MENTIONS LEGALES */
+/***********************/
 
+#mentions, #politique {
+	padding-bottom: 50px;
+}
+#mentions .mentions-title {
+ background-color: #ddd;
+ padding: 25px 0;
+ margin-bottom: 30px;
+ margin-top: 145px;
+}
+
+#mentions h2 {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#mentions h3 {
+	font-weight: bold;
+	margin: 30px 0 15px 0;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+#mentions p {
+	line-height: 1.8;
+}
+#mentions li {
+	line-height: 1.8;
+	list-style: disc;
+}
+#mentions a {
+	color: #0A0571;
+	font-weight: bold;
+}
+
+#politique .mentions-title {
+ background-color: #ddd;
+ padding: 25px 0;
+ margin-bottom: 30px;
+ margin-top: 145px;
+}
+
+#politique h2 {
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#politique h3 {
+	font-weight: bold;
+	margin: 30px 0 15px 0;
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+
+#politique p {
+	line-height: 1.8;
+}
+#politique a {
+	color: #0A0571;
+	font-weight: bold;
+}
 
 
 
@@ -1009,6 +1077,12 @@ footer {
 		margin-bottom: 30px;
 	}
 
+	/* CAMPING-CAR */
+
+	#campingcar .bouton-contact {
+		margin: 40px 0 30px 0;
+	}
+
 	/* ENTRETIEN ET REPARATION */
 
 	#entretien .occasions-title {
@@ -1022,6 +1096,31 @@ footer {
 	#entretien .row-two {
     margin-top: 0;
 }
+
+	/* CARROSSERIE */
+
+	#services #modalCarrosserie .modal-body {
+		flex-direction: column;
+	}
+
+	#services #modalCarrosserie .modal-body .image-repair {
+		margin-bottom: 30px;
+	}
+
+	/* CONTROLE TECHNIQUE */
+
+	#services #modalControle .modal-body {
+		margin: 0 20px;
+	}
+
+	/* CARTE GRISE */
+	#services #modalCarte .modal-body {
+		flex-direction: column;
+	}
+
+	#services #modalCarte .modal-body .image-repair {
+		margin-bottom: 30px;
+	}
 
 
  }
