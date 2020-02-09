@@ -68,6 +68,7 @@ if (empty($_SESSION['username'])) {
                     <thead>
                         <tr>
                             <th>Véhicule</th>
+                            <th>Réf</th>
                             <th>Prix</th>
                             <th>Kilomètres</th>
                             <th>Année</th>
@@ -79,12 +80,12 @@ if (empty($_SESSION['username'])) {
                         <?php
                         require 'database.php';
                         $db = Database::connect();
-                        $statement = $db->query('SELECT voitures.id, voitures.title, voitures.price, voitures.km, voitures.annee
-                                    FROM voitures ORDER BY voitures.id DESC');
+                        $statement = $db->query('SELECT voitures.id, voitures.title, voitures.price, voitures.km, voitures.annee, voitures.id_ref, voitures.id_num, reference.name AS ref, number.value AS num 
+                                    FROM voitures INNER JOIN reference ON voitures.id_ref = reference.id INNER JOIN number ON voitures.id_num = number.id ORDER BY voitures.id DESC');
                         while ($item = $statement->fetch()) {
                             echo '<tr>';
                             echo '<td width=350>' . $item['title'] . '</td>';
-                            // echo '<td>' . $item['ref'] . '</td>';
+                            echo '<td>' . $item['ref'] . '-' . $item['num'] . '</td>';
                             echo '<td>' . number_format((float) $item['price'], 0, '.', ' ') . ' €' . '</td>';
                             echo '<td>' . number_format((float) $item['km'], 0, '.', ' ') . ' km' . '</td>';
                             echo '<td>' . $item['annee'] . '</td>';

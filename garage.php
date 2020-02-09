@@ -14,12 +14,12 @@
         <div class="container">
         <div class="garage-block">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 reveal-1">
                         <div class="garage-img">
                             <img src="images/garage_01.jpg" alt="Garage automobiles à Jons">
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 reveal-2">
                         <div class="garage-content">
                             <p>Repris début 2020, le garage CILK AUTO situé à Jons, près de Lyon, met à votre disposition <a href="services.php">ses services</a> et son savoir-faire.</p>
                             <p>Membre du réseau AD Expert, nous assurons l'entretien et la réparation de véhicules toutes marques, de la citadine au <a href="campingcar.php">camping-car</a>.<br>

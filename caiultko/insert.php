@@ -60,7 +60,7 @@ if (empty($_SESSION['username'])) {
 
 
 
-    $titleError = $marqueError = $modeleError = $id_refError = $priceError = $kmError = $colorError = $anneeError = $chevauxError = $carbError = $wearboxError = $title = $marque = $modele = $id_ref = $id_num = $price = $km = $color = $annee = $chevaux = $carb = $wearbox = $options = $comments = "";
+    $titleError = $marqueError = $modeleError = $id_refError = $priceError = $kmError = $colorError = $anneeError = $chevauxError = $carbError = $wearboxError = $imagesError = $title = $marque = $modele = $id_ref = $id_num = $price = $km = $color = $annee = $chevaux = $carb = $wearbox = $options = $comments = "";
 
 
     if (!empty($_POST)) {
@@ -130,10 +130,11 @@ if (empty($_SESSION['username'])) {
             $wearboxError = "Ce champ est obligatoire";
             $isSuccess = false;
         }
-        // if (empty($images)) {
-        //     $imagesError = "Ce champ est obligatoire";
-        //     $isSuccess = false;
-        // } else {
+        if (empty($myImage)) {
+            $imagesError = "Ce champ est obligatoire";
+            $isSuccess = false;
+        } 
+        // else {
         //     $isUploadSuccess = true;
         //     if ($imagesExtension != "jpg" && $imagesExtension != "png" && $imagesExtension != "jpeg" && $imagesExtension != "gif") {
         //         $imagesError = "Les fichiers autorisés sont: .jpg, .png, .gif";
@@ -379,8 +380,7 @@ if (empty($_SESSION['username'])) {
                         <br>
                         <input type="file" id="images" name="images[]" multiple>
                         <br>
-                        <!-- <span class="help-inline"><?php // echo $imagesError; 
-                                                        ?></span> -->
+                        <span class="help-inline"><?php echo $imagesError; ?></span>
                     </div>
 
                     <div class="form-actions-add">

@@ -30,8 +30,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="assurances">
-                        <h2>Agréments assurances</h2>
-                        <ul>
+                        <h2 class="reveal-1">Agréments assurances</h2>
+                        <ul class="reveal-2">
                             <li><img src="images/assurances/Allianz.svg.png" alt="Allianz" class="allianz"></li>
                             <li><img src="images/assurances/carma.png" alt="Carma"></li>
                             <li><img src="images/assurances/GMF_logo.svg" alt="GMF"></li>
@@ -44,8 +44,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="other-serv">
-                        <h2>Nos services</h2>
-                        <ul>
+                        <h2 class="reveal-1">Nos services</h2>
+                        <ul class="reveal-2">
                             <li><img src="images/assurances/carte-grise.png" alt="Service carte grise"></li>
                             <li class="allservices"><a href="services.php">Tous nos services</a></li>
                         </ul>
@@ -57,7 +57,7 @@
 
     <section id="contact">
         <div class="container">
-            <div class="row">
+            <div class="row reveal-1">
                 <div class="col-md-4">
                     <div class="contact-content">
                         <img src="images/contact.svg" alt="Téléphone et mail">
@@ -119,8 +119,8 @@
                             <h3>Notre actualité</h3>
                             <div class="small-divider"></div>
                         </div>
-                        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="380" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
-                            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote>
+                        <div class="fb-page">
+                        <p>Notre page Facebook est en cours de création...</p>
                         </div>
                     </div>
                 </div>

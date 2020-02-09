@@ -19,7 +19,6 @@ function active($currect_page)
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $titre ?></title>
     <link rel="icon" href="images/favicon.png" />
-    <link rel="stylesheet" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
