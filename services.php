@@ -25,7 +25,7 @@
                 <div class="col-md-3" data-toggle="modal" data-target="#modalCarrosserie">
                     <div class="service">
                         <h4>Carrosserie</h4>
-                        <img class="card-img" src="images/car-door.svg" alt="Controle technique">
+                        <img class="card-img" src="images/car-door.svg" alt="Carrosserie">
                     </div>
                 </div>
 
@@ -171,7 +171,7 @@
                 <div class="col-md-3" data-toggle="modal" data-target="#myModal">
                     <div class="service">
                         <h4>Service à domicile</h4>
-                        <img class="repair-img" src="images/car-restitution.svg" alt="Réparations">
+                        <img class="repair-img" src="images/car-restitution.svg" alt="Service à domicile">
                     </div>
                 </div>
 
@@ -179,7 +179,7 @@
                     <a href="campingcar.php">
                         <div class="service">
                             <h4>Camping-car</h4>
-                            <img src="images/caravan.svg" alt="Controle technique">
+                            <img src="images/caravan.svg" alt="Réparations camping-car">
                         </div>
                     </a>
                 </div>
@@ -187,7 +187,7 @@
                     <a href="https://www.fiat.fr/" target="_blank">
                         <div class="service">
                             <h4>Vente véhicules neufs</h4>
-                            <img class="card-img" src="images/fiat.svg" alt="Fiat">
+                            <img class="card-img" src="images/fiat.svg" alt="Vente véhicules neufs">
                         </div>
                     </a>
                 </div>
@@ -195,7 +195,7 @@
                     <a href="occasions.php">
                         <div class="service">
                             <h4>Vente véhicules d'occasions</h4>
-                            <img class="card-img" src="images/car-sale.svg" alt="Voiture occasion">
+                            <img class="card-img" src="images/car-sale.svg" alt="Vente véhicules d'occasions">
                         </div>
                     </a>
 

@@ -26,7 +26,7 @@
                 <div class="col-md-4">
                     <div class="revision rev-up">
                         <div class="repair-image">
-                            <img src="images/entretien/liaison.png" alt="Réparation" class="repair-img">
+                            <img src="images/entretien/liaison.png" alt="Liaison au sol" class="repair-img">
                         </div>
                         <h2>Liaison au sol</h2>
                         <div class="rev-content">
@@ -40,7 +40,7 @@
                 <div class="col-md-4">
                     <div class="revision rev-up">
                         <div class="repair-image">
-                            <img src="images/entretien/air.png" alt="Réparation" class="repair-img">
+                            <img src="images/entretien/air.png" alt="Chauffage et climatisation" class="repair-img">
                         </div>
                         <h2>Chauffage</h2>
                         <h2>Climatisation</h2>
@@ -52,7 +52,7 @@
                 <div class="col-md-4">
                     <div class="revision rev-down">
                         <div class="repair-image">
-                            <img src="images/entretien/light.png" alt="Réparation" class="repair-img">
+                            <img src="images/entretien/light.png" alt="Visibilité" class="repair-img">
                         </div>
                         <h2>Visibilité</h2>
                         <div class="rev-content">
@@ -65,7 +65,7 @@
                 <div class="col-md-4">
                     <div class="revision rev-down">
                         <div class="repair-image">
-                            <img src="images/entretien/transmission.png" alt="Réparation" class="repair-img">
+                            <img src="images/entretien/transmission.png" alt="Moteur et transmission" class="repair-img">
                         </div>
                         <h2>Moteur - transmission</h2>
                         <div class="rev-content">
@@ -79,7 +79,7 @@
                 <div class="col-md-4">
                     <div class="revision rev-down">
                         <div class="repair-image">
-                            <img src="images/entretien/battery.png" alt="Réparation" class="repair-img">
+                            <img src="images/entretien/battery.png" alt="Electrique et électronique" class="repair-img">
                         </div>
                         <h2>électrique - électronique</h2>
                         <div class="rev-content">

@@ -4,7 +4,7 @@ session_start();
 // On teste si la variable de session existe et contient une valeur
 if (empty($_SESSION['username'])) {
     // Si inexistante ou nulle, on redirige vers le formulaire de login
-    header('Location: ../auth/login.php');
+    header('Location: ../oktluiac/login.php');
     exit();
 }
 ?>

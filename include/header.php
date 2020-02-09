@@ -33,13 +33,13 @@ function active($currect_page)
                 <div class="topnav-content">
 
                     <div class="topnav-info">
-                        <img src="images/call.svg" alt="Phone">
+                        <img src="images/call.svg" alt="Téléphone">
                         <a href="tel:+33472024442">
                             <p>04 72 02 44 42</p>
                         </a>
                     </div>
                     <div class="topnav-mail">
-                        <img src="images/envelope.svg" alt="Mail">
+                        <img src="images/envelope.svg" alt="Email">
                         <a href="mailto:contact@cilk-autos.fr">cilkauto@outlook.fr</a>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ function active($currect_page)
         <nav class="navbar navbar-expand-lg" id="navigation">
 
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php"><img src="images/logo-CILK.png" alt="Logo"></a>
+                <a class="navbar-brand" href="index.php"><img src="images/logo-CILK.png" alt="Logo CILK AUTO"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -81,10 +81,10 @@ function active($currect_page)
                 </div>
                 <div class="logos-nav">
                     <a href="https://www.fiat.fr/" target="_blank">
-                        <img class="logo-fiat" src="images/logo-fiat.png" alt="Logo">
+                        <img class="logo-fiat" src="images/logo-fiat.png" alt="Logo FIAT">
                     </a>
                     <a href="https://www.ad.fr/" target="_blank">
-                        <img class="logo-expert" src="images/logo-expert.png" alt="Logo">
+                        <img class="logo-expert" src="images/logo-expert.png" alt="Logo AD EXPERT">
                     </a>
                 </div>
             </div>

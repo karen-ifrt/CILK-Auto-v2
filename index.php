@@ -8,13 +8,13 @@
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/background.jpg" alt="Fiat 500">
+                    <img class="d-block w-100" src="images/background.jpg" alt="Vente véhicules neufs">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/fiat_utilitaire.jpg" alt="Fiat utilitaire">
+                    <img class="d-block w-100" src="images/fiat_utilitaire.jpg" alt="Vente véhicules d'occasions">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/fiat_campingcar.jpg" alt="Fiat Ducato">
+                    <img class="d-block w-100" src="images/fiat_campingcar.jpg" alt="Réparation camping-car">
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
                     <div class="other-serv">
                         <h2>Nos services</h2>
                         <ul>
-                            <li><img src="images/assurances/carte-grise.png" alt="Carte grise"></li>
+                            <li><img src="images/assurances/carte-grise.png" alt="Service carte grise"></li>
                             <li class="allservices"><a href="services.php">Tous nos services</a></li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="contact-content">
-                        <img src="images/contact.svg" alt="Contact">
+                        <img src="images/contact.svg" alt="Téléphone et mail">
                         <div class="contact-text">
                             <h3>Nous contacter</h3>
                             <div class="small-divider"></div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contact-content">
-                        <img src="images/placeholder.svg" alt="Map">
+                        <img src="images/placeholder.svg" alt="Notre adresse">
                         <div class="contact-text">
                             <h3>Notre adresse</h3>
                             <div class="small-divider"></div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="contact-content">
-                        <img src="images/passage-of-time.svg" alt="Map">
+                        <img src="images/passage-of-time.svg" alt="Nos horaires">
                         <div class="contact-text">
                             <h3>Nos horaires</h3>
                             <div class="small-divider"></div>

@@ -14,7 +14,7 @@
 
         <?php
 
-        require 'admin/database.php';
+        require 'caiultko/database.php';
 
         $db = Database::connect();
         $statement = $db->query('SELECT * FROM voitures ORDER BY id DESC');
@@ -32,7 +32,7 @@
             echo '<div class="col-md-6">
             <div class="thumbnail">
                         <div class="car-img">
-                            <img src="images/' . $item['images'] . '">
+                            <img src="images/' . $item['images'] . '" alt="' . $item['title'] . '">
                         </div>
                         <div class="caption">
                             <h4>' . $item['title'] . '</h4>

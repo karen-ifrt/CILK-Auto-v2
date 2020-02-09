@@ -43,7 +43,7 @@
                     </form>
 
                     <div class="contact-content">
-                        <img src="images/contact.svg" alt="Contact">
+                        <img src="images/contact.svg" alt="Téléphone et mail">
                         <div class="contact-text">
                             <p>Tél. : <a href="tel:+33472024442">04 72 02 44 42</a></p>
                             <p>Mail : <a href="mailto:contact@cilk-autos.fr">cilkauto@outlook.fr</a></p>
