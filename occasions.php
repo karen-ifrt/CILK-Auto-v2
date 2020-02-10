@@ -1,5 +1,6 @@
     <?php
     $titre = "CILK Auto | Occasions";
+    $descr = "Retrouvez ici tous nos véhicules d'occasions à la vente.";
     require 'include/header.php';
     $currect_page = "occasions.php";
     ?>

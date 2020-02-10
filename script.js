@@ -114,3 +114,16 @@ const observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
     observer.observe(r);
 })
+
+// Carousel slick
+
+$(document).ready(function () {
+    $('.my-carousel').slick({
+        dots: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+        cssEase: 'linear'
+    });
+});

@@ -1,21 +1,20 @@
     <?php
     $titre = "CILK Auto | Garage auto Jons";
+    $descr = "Réparations toutes marques. Mécanique, carrosserie et vente de véhicules neufs et d'occasions.";
     require 'include/header.php';
     $currect_page = "index.php";
     ?>
 
     <section id="home">
-        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/background.jpg" alt="Vente véhicules neufs">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/fiat_utilitaire.jpg" alt="Vente véhicules d'occasions">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="images/fiat_campingcar.jpg" alt="Réparation camping-car">
-                </div>
+        <div class="my-carousel">
+            <div class="carousel-img">
+                <img src="images/background.jpg" alt="Vente véhicules neufs">
+            </div>
+            <div class="carousel-img">
+                <img src="images/fiat_utilitaire.jpg" alt="Vente véhicules d'occasions">
+            </div>
+            <div class="carousel-img">
+                <img src="images/fiat_campingcar.jpg" alt="Réparation camping-car">
             </div>
         </div>
         <div class="home-content">
@@ -120,7 +119,7 @@
                             <div class="small-divider"></div>
                         </div>
                         <div class="fb-page">
-                        <p>Notre page Facebook est en cours de création...</p>
+                            <p>Notre page Facebook est en cours de création...</p>
                         </div>
                     </div>
                 </div>

@@ -83,7 +83,8 @@ body {
 }
 
 #myBtn:hover {
-  background-color: #0a0571;
+  background-color: #25B9F1;
+;
 }
 
 /*********************/
@@ -207,34 +208,18 @@ body {
 	position: relative;
 }
 
-#home .carousel-item {
-	width: 100%;
+#home .carousel-img {
 	height: 500px;
 }
 
-#home .carousel-item img {
- 	height: 100%;
+#home .carousel-img img {
+	 height: 100%;
+	 width: 100%;
  	object-fit: cover;
 }
 
-.carousel-fade .carousel-item {
-	opacity: 0;
-	transition-duration: 1s;
-	transition-property: opacity;
-}
-.carousel-fade  .carousel-item.active,.carousel-fade
-.carousel-item-next.carousel-item-left,.carousel-fade
-.carousel-item-prev.carousel-item-right {
-	opacity: 1;
-}
-.carousel-fade .active.carousel-item-left,.carousel-fade  .active.carousel-item-right {
-	opacity: 0;
-}
-.carousel-fade  .carousel-item-next,.carousel-fade .carousel-item-prev,.carousel-fade
-.carousel-item.active,.carousel-fade .active.carousel-item-left,.carousel-fade
-.active.carousel-item-prev {
-	transform: translateX(0);
-	transform: translate3d(0, 0, 0);
+#home .slick-arrow {
+	display: none!important;
 }
 
 #home .home-content {
@@ -297,10 +282,12 @@ body {
 	padding: 10px;
 	background-color: #0A0571;
 	color: #fff;
+	transition: all .5s;
 }
 
 #assurances .other-serv .allservices a:hover{
-	background-color: #070349;
+	background-color: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 #assurances ul {
@@ -375,6 +362,10 @@ body {
 	height: 2px;
 	background-color: #0A0571;
 	margin-bottom: 10px;
+}
+
+#contact a {
+	transition: all .5s;
 }
 
 #contact a:hover {
@@ -470,7 +461,8 @@ body {
 }
 
 #formulaire .btn-contact:hover {
-	background-color: #070349;
+	background-color: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 #formulaire .contact-content {
@@ -571,7 +563,8 @@ body {
 }
 .caption .btn-more:hover {
 	color: #fff;
-	background-color: #070349;
+	background-color: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 /***********************/
@@ -607,7 +600,8 @@ body {
 
 .btn-return:hover {
 	color: #fff;
-	background-color: #070349;
+	background-color: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 table tr td:first-child {
@@ -704,7 +698,8 @@ table {
 
 #campingcar .btn-contact a:hover {
 	color: #fff;
-	background-color: #070349;
+	background-color: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 /***********************/
@@ -812,7 +807,8 @@ table {
 }
 
 #services .btn-close:hover {
-	background-color: rgb(97, 91, 197);
+	background-color: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 #services li::before {

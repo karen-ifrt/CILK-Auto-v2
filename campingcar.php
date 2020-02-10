@@ -1,5 +1,6 @@
     <?php
     $titre = "CILK Auto | Camping-car";
+    $descr = "Entretien et réparation de votre camping-car. Vidange, distribution, pneumatiques, climatisation, etc...";
     require 'include/header.php';
     $currect_page = "campingcar.php";
     ?>

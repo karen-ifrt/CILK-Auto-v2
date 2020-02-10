@@ -1,5 +1,6 @@
     <?php
     $titre = "CILK Auto | Services";
+    $descr = "Nos services : Réparation/Entretien, Carrosserie, Contrôle technique, Carte grise, Service à domicile, Camping-car, Vente de véhicules neufs et d'occasions.";
     require 'include/header.php';
     $currect_page = "services.php";
     ?>

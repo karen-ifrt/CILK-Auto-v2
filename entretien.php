@@ -1,5 +1,6 @@
     <?php
     $titre = "CILK Auto | Réparation et entretien";
+    $descr = "Nos services d'entretien et de réparation : Révision, Liaison au sol, Chauffage/climatisation, Visibilité, Moteur/transmission, Electrique/électronique, etc...";
     require 'include/header.php';
     $currect_page = "services.php";
     ?>

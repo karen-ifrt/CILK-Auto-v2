@@ -1,5 +1,6 @@
     <?php
     $titre = "CILK Auto | Garage";
+    $descr = "Nous assurons l'entretien et la réparation de véhicules toutes marques, de la citadine au camping-car. Nous pouvons aussi les préparer au contrôle technique, et réaliser des travaux de peinture et carrosserie.";
     require 'include/header.php';
     $currect_page = "garage.php";
     ?>
@@ -12,7 +13,7 @@
         </div>
 
         <div class="container">
-        <div class="garage-block">
+            <div class="garage-block">
                 <div class="row">
                     <div class="col-md-6 reveal-1">
                         <div class="garage-img">

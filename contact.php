@@ -1,5 +1,6 @@
     <?php
     $titre = "CILK Auto | Contactez-nous";
+    $descr = "Nous restons à disposition pour tout renseignement supplémentaire.";
     require 'include/header.php';
     $currect_page = "contact.php";
     ?>
