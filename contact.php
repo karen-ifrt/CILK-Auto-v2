@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Contactez-nous";
+    $titre = "CILK AUTO | Contactez-nous";
     $descr = "Nous restons à disposition pour tout renseignement supplémentaire.";
+    $ogtitle = "CILK AUTO - Contactez-nous";
+    $ogurl = "https://www.cilkauto.fr/contact.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "contact.php";
     ?>

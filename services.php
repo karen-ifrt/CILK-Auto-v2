@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Services";
+    $titre = "CILK AUTO | Services";
     $descr = "Nos services : Réparation/Entretien, Carrosserie, Contrôle technique, Carte grise, Service à domicile, Camping-car, Vente de véhicules neufs et d'occasions.";
+    $ogtitle = "CILK AUTO - Services";
+    $ogurl = "https://www.cilkauto.fr/services.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "services.php";
     ?>

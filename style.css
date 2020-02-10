@@ -218,9 +218,6 @@ body {
  	object-fit: cover;
 }
 
-#home .slick-arrow {
-	display: none!important;
-}
 
 #home .home-content {
 	position: absolute;

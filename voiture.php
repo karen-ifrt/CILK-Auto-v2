@@ -29,7 +29,10 @@ $stm->execute(array($id));
 $img = $stm->fetchAll();
 Database::disconnect();
 
-$titre = "CILK Auto | " . $item['title'] . "";
+$ogtitle = "CILK AUTO | " . $item['title'] . "";
+$ogurl = "https://www.cilkauto.fr/voiture.php?id=". $id;
+$ogimage = "https://www.cilkauto.fr/images/" . $item['images'];
+$titre = "CILK AUTO | " . $item['title'] . "";
 require 'include/header.php';
 
 function checkInput($data)

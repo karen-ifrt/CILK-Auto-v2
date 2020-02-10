@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Garage";
+    $titre = "CILK AUTO | Notre garage";
     $descr = "Nous assurons l'entretien et la réparation de véhicules toutes marques, de la citadine au camping-car. Nous pouvons aussi les préparer au contrôle technique, et réaliser des travaux de peinture et carrosserie.";
+    $ogtitle = "CILK AUTO - Notre garage";
+    $ogurl = "https://www.cilkauto.fr/garage.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "garage.php";
     ?>

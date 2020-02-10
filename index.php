@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Garage auto Jons";
+    $titre = "CILK AUTO | Garage auto Jons";
     $descr = "Réparations toutes marques. Mécanique, carrosserie et vente de véhicules neufs et d'occasions.";
+    $ogtitle = "CILK AUTO - Garage auto Jons";
+    $ogurl = "https://www.cilkauto.fr/index.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "index.php";
     ?>

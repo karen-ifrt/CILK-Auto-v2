@@ -120,10 +120,12 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
 $(document).ready(function () {
     $('.my-carousel').slick({
         dots: false,
+        arrows: false,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 4000,
         fade: true,
-        cssEase: 'linear'
+        cssEase: 'linear',
+        pauseOnHover: false,
     });
 });

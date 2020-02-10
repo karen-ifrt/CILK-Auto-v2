@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Camping-car";
+    $titre = "CILK AUTO | Camping-car";
     $descr = "Entretien et réparation de votre camping-car. Vidange, distribution, pneumatiques, climatisation, etc...";
+    $ogtitle = "CILK AUTO - Camping-car";
+    $ogurl = "https://www.cilkauto.fr/campingcar.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "campingcar.php";
     ?>

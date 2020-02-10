@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Réparation et entretien";
+    $titre = "CILK AUTO | Réparation et entretien";
     $descr = "Nos services d'entretien et de réparation : Révision, Liaison au sol, Chauffage/climatisation, Visibilité, Moteur/transmission, Electrique/électronique, etc...";
+    $ogtitle = "CILK AUTO - Réparation et entretien";
+    $ogurl = "https://www.cilkauto.fr/entretien.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "services.php";
     ?>
@@ -11,7 +14,7 @@
                 <h3>Entretien et réparation</h3>
             </div>
         </div>
-        <div class="container">
+        <div class="container reveal-1">
             <div class="row">
                 <div class="col-md-4">
                     <div class="revision rev-up">

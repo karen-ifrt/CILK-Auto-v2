@@ -19,6 +19,9 @@ function active($currect_page)
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo $titre ?></title>
     <meta name="description" content="<?php echo $descr ?>" />
+    <meta property="og:title" content="<?php echo $ogtitle ?>">
+    <meta property="og:url" content="<?php echo $ogurl ?>">
+    <meta property="og:image" content="<?php echo $ogimage ?>">
     <link rel="icon" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

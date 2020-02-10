@@ -1,6 +1,9 @@
     <?php
-    $titre = "CILK Auto | Occasions";
+    $titre = "CILK AUTO | Véhicules d'occasions";
     $descr = "Retrouvez ici tous nos véhicules d'occasions à la vente.";
+    $ogtitle = "CILK AUTO - Véhicules d'occasions";
+    $ogurl = "https://www.cilkauto.fr/occasions.php";
+    $ogimage = "https://www.cilkauto.fr/images/logo-CILK.png";
     require 'include/header.php';
     $currect_page = "occasions.php";
     ?>
@@ -21,7 +24,7 @@
         $statement = $db->query('SELECT * FROM voitures ORDER BY id DESC');
         Database::disconnect();
 
- 
+
 
 
         echo '<div class="container">
