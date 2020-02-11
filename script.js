@@ -129,3 +129,23 @@ $(document).ready(function () {
         pauseOnHover: false,
     });
 });
+
+
+// Redirection après formulaires
+if (document.querySelector("#hidden-checker")) {
+    if (document.querySelector("#hidden-checker").value == "1") {
+        window.location.href = "http://www.cilkauto.fr/caiultko/index.php";
+    }
+}
+
+if (document.querySelector("#hidden-checker-insert")) {
+    if (document.querySelector("#hidden-checker-insert").value == "1") {
+        window.location.href = "http://www.cilkauto.fr/caiultko/index.php";
+    }
+}
+
+if (document.querySelector('#hidden-checker-delete')) {
+    if (document.querySelector('#hidden-checker-delete').value == '1') {
+        window.location.href = "http://www.cilkauto.fr/caiultko/index.php";
+    }
+}

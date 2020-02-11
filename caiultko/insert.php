@@ -133,7 +133,7 @@ if (empty($_SESSION['username'])) {
         if (empty($myImage)) {
             $imagesError = "Ce champ est obligatoire";
             $isSuccess = false;
-        } 
+        }
         // else {
         //     $isUploadSuccess = true;
         //     if ($imagesExtension != "jpg" && $imagesExtension != "png" && $imagesExtension != "jpeg" && $imagesExtension != "gif") {
@@ -198,10 +198,6 @@ if (empty($_SESSION['username'])) {
                 $stm->execute(array($car, $value['id']));
                 Database::disconnect();
             }
-
-
-
-            header('Location: index.php');
         }
     }
 
@@ -218,10 +214,9 @@ if (empty($_SESSION['username'])) {
 
     <section class="car-add">
         <div class="container">
-
             <div class="row">
-
                 <form class="form" role="form" id="form" action="insert.php" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="" id="hidden-checker-insert" value="<?php echo $isSuccess ?>">
                     <div class="form-group">
                         <label for="title">Titre de l'annonce :</label>
                         <input type="text" class="form-control" id="title" name="title" value="<?php echo $title; ?>">
@@ -247,7 +242,7 @@ if (empty($_SESSION['username'])) {
 
                                 <?php
                                 $db = Database::connect();
-                                $voitures = $db->query('SELECT * FROM reference');
+                                $voitures = $db->query('SELECT * FROM reference ORDER BY name ASC');
 
                                 foreach ($voitures as $voiture) {
                                     echo '<option value="' . $voiture['id'] . '">' . $voiture['name'] . '</option>';

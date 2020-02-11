@@ -9,7 +9,6 @@ if (empty($_SESSION['username'])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -186,15 +185,11 @@ if (empty($_SESSION['username'])) {
                     $statement = $db->prepare('INSERT INTO relation (id_voiture, id_images) VALUES (?, ?)');
                     $statement->execute(array($id, $value_id));
                 }
-
-
-
             } else {
                 $statement = $db->prepare("UPDATE voitures set title = ?, marque = ?, modele = ?, id_ref = ?, id_num = ?, price = ?, km = ?, color = ?, annee = ?, chevaux = ?, carb = ?, wearbox = ?, options = ?, comments = ? WHERE id = ?");
                 $statement->execute(array($title, $marque, $modele, $id_ref, $id_num, $price, $km, $color, $annee, $chevaux, $carb, $wearbox, $options, $comments, $id));
             }
             Database::disconnect();
-            header("Location: index.php");
         }
     } else {
         $db = Database::connect();
@@ -236,6 +231,7 @@ if (empty($_SESSION['username'])) {
     <section class="car-update">
         <div class="container">
             <form class="form" role="form" id="form" action="<?php echo 'update.php?id=' . $id; ?>" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="" id="hidden-checker" value="<?php echo $isSuccess ?>">
                 <div class="form-group">
                     <label for="title">Titre de l'annonce :</label>
                     <input type="text" class="form-control" id="title" name="title" value="<?php echo $title; ?>">
