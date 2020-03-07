@@ -1,5 +1,5 @@
     <?php
-    $titre = "CILK AUTO | Notre garage";
+    $titre = "Notre garage à Jons | CILK AUTO";
     $descr = "Nous assurons l'entretien et la réparation de véhicules toutes marques, de la citadine au camping-car. Nous pouvons aussi les préparer au contrôle technique, et réaliser des travaux de peinture et carrosserie.";
     $ogtitle = "CILK AUTO - Notre garage";
     $ogurl = "https://www.cilkauto.fr/garage.php";
@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-6 reveal-1">
                         <div class="garage-img">
-                            <img src="images/garage_01.jpg" alt="Garage automobiles à Jons">
+                            <img src="images/garage-cilk-jons.jpg" alt="Garage automobiles à Jons">
                         </div>
                     </div>
                     <div class="col-md-6 reveal-2">

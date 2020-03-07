@@ -1,5 +1,5 @@
     <?php
-$titre = "CILK AUTO | Politique de confidentialité";
+$titre = "Politique de confidentialité | CILK AUTO";
     require 'include/header.php';
     ?>
 

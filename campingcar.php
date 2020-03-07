@@ -1,5 +1,5 @@
     <?php
-    $titre = "CILK AUTO | Camping-car";
+    $titre = "Camping-car Jons | CILK AUTO";
     $descr = "Entretien et réparation de votre camping-car. Vidange, distribution, pneumatiques, climatisation, etc...";
     $ogtitle = "CILK AUTO - Camping-car";
     $ogurl = "https://www.cilkauto.fr/campingcar.php";
@@ -17,7 +17,7 @@
         </div>
 
         <div class="camping-img">
-            <img src="images/campingcar_img.jpg" alt="Réparation et entretien camping-car">
+            <img src="images/campingcar-jons.jpg" alt="Réparation et entretien camping-car Jons">
         </div>
 
         <div class="camping-content">

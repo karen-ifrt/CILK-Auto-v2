@@ -115,7 +115,7 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function (r) {
     observer.observe(r);
 })
 
-// Carousel slick
+// Carousel slick home page
 
 $(document).ready(function () {
     $('.my-carousel').slick({
@@ -130,6 +130,19 @@ $(document).ready(function () {
     });
 });
 
+// Carousel slick page voiture
+
+$('.responsive').slick({
+    arrows: true,
+    nextArrow: '<div class="slick-next"></div>',
+    prevArrow: '<div class="slick-prev"></div>',
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    fade: true,
+    cssEase: 'linear',
+    pauseOnHover: true,
+});
 
 // Redirection après formulaires
 if (document.querySelector("#hidden-checker")) {
@@ -146,6 +159,15 @@ if (document.querySelector("#hidden-checker-insert")) {
 
 if (document.querySelector('#hidden-checker-delete')) {
     if (document.querySelector('#hidden-checker-delete').value == '1') {
-        window.location.href = "http://www.cilkauto.fr/caiultko/index.php";
+        window.location.href = "http://cilkauto.fr/caiultko/index.php";
     }
 }
+
+// Remove modal - mobile
+
+$('#exampleModal').on('show.bs.modal', function () {
+    var width = $(window).width();
+    if (width < 768) {
+        $('#exampleModal').modal('hide');
+    }
+});

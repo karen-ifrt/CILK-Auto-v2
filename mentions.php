@@ -1,5 +1,5 @@
     <?php
-    $titre = "CILK AUTO | Mentions légales";
+    $titre = "Mentions légales | CILK AUTO";
     require 'include/header.php';
     ?>
     <section id="mentions">

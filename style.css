@@ -238,8 +238,15 @@ body {
 
 #home .home-content h1 {
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 1.6rem;
+	margin-bottom: 10px
+}
+
+#home .home-content h2 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.4rem;
 }
 
 #home .home-content p {
@@ -263,10 +270,6 @@ body {
 	font-size: 1.2rem;
 }
 
-#assurances .other-serv img {
-	width: 90px;
-	height: auto;
-}
 
 #assurances .other-serv .allservices {
 	font-size: 0.8rem;
@@ -296,16 +299,9 @@ body {
 }
 
 #assurances img {
-	width: auto;
-	height: 40px;
 	padding-left: 8px;
 }
 
-#assurances .allianz {
-	width: auto;
-	height: 20px;
-	margin-top: 10px;
-}
 
 /***********************/
 /* CONTACT SECTION */
@@ -333,7 +329,6 @@ body {
 }
 
 #contact img {
-	width: 50px;
 	position: absolute;
 	top: 50px;
 }
@@ -408,6 +403,23 @@ body {
 	background-color: #0A0571;
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+#social .get-reviews {
+	margin-top: 30px;
+}
+
+#social .get-reviews a {
+	border: 1px solid #0A0571;
+	padding: 10px;
+	background: #0A0571;
+	color: #fff;
+	transition: all .3s;
+}
+
+#social .get-reviews a:hover {
+	background: #25B9F1;
+	border: 1px solid #25B9F1;
 }
 
 /***********************/
@@ -520,14 +532,14 @@ body {
 	max-height: 220px;
 }
 
-.thumbnail img {
-	width: 250px;
-	height: auto;
-	margin: 0 auto;
+#occasions .thumbnail img {
+	width: 100%;
+	height: 100%;
 }
 
-.thumbnail .car-img {
-	margin: auto 0;
+#occasions .thumbnail .car-img {
+	width: 250px;
+    height: 200px;
 }
 
 #occasions h4 {
@@ -636,8 +648,35 @@ table {
 	height: auto;
 }
 
-.car-info .carousel {
+.car-info .slick-slide img {
+    width: 100%;
+	height: 400px;
 	cursor: zoom-in;
+
+}
+
+.car-info .slick-prev::before {
+    content: "‹";
+    font-size: 4.5rem;
+    color: #fff;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.car-info .slick-next::before {
+    content: "›";
+    font-size: 4.5rem;
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 /***********************/
@@ -763,8 +802,6 @@ table {
 }
 
 #services img {
-	width: 80px;
-	height: auto;
 	margin-top: 10px;
 }
 
@@ -775,7 +812,6 @@ table {
 
 #services .repair-img {
 	margin-top: 0;
-	width: 90px;
 }
 
 #services .card-img {
@@ -1031,8 +1067,6 @@ footer {
 }
 
 
-
-
 @media (max-width: 576px) { 
 
  }
@@ -1042,15 +1076,18 @@ footer {
 	/* HOME */
 	
 	#home .home-content {
-	top: 340px;
+	top: 300px;
 	right: 30px;
 	left: 30px;
-	padding: 20px;
+	padding: 10px 5px;
 	line-height: 1.25;
 	}
 
 	#home .home-content h1 {
 	font-size: 1.2rem;
+	}
+	#home .home-content h2 {
+	font-size: 1rem;
 	}
 
 	#home .home-content p {
@@ -1144,10 +1181,21 @@ footer {
 
 	#occasions .thumbnail {
 		display: block;
-		min-height: 550px;
+		height: 500px;
 	}
-	.thumbnail img {
+	#occasions .thumbnail img {
 		width: 100%;
+	}
+	
+	#occasions .thumbnail .car-img {
+		width: 100%;
+    	height: 250px;
+	}
+
+	/* VOITURES */
+
+	.car-info .carousel-it img {
+		height: auto;
 	}
 
 	/* FOOTER */

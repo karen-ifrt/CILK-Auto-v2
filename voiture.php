@@ -30,7 +30,7 @@ $img = $stm->fetchAll();
 Database::disconnect();
 
 $ogtitle = "CILK AUTO | " . $item['title'] . "";
-$ogurl = "https://www.cilkauto.fr/voiture.php?id=". $id;
+$ogurl = "https://www.cilkauto.fr/voiture.php?id=" . $id;
 $ogimage = "https://www.cilkauto.fr/images/" . $item['images'];
 $titre = "CILK AUTO | " . $item['title'] . "";
 require 'include/header.php';
@@ -105,47 +105,26 @@ function checkInput($data)
                         </div>
                     </div>
                 </div>
-                <div id="carouselExampleIndicators" class="carousel slide carousel-fullscreen" data-ride="carousel">
-                    <ol class="carousel-indicators">
 
-                        <?php
-                        $i = 0;
-                        foreach ($img as $row) {
-                            $actives = '';
-                            if ($i == 0) {
-                                $actives = 'active';
-                            }
-                        ?>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="<?php echo $i; ?>" class="<?php echo $actives; ?>"></li>
-                        <?php $i++;
-                        } ?>
-                    </ol>
-                    <div class="carousel-inner">
-                        <?php
-                        $i = 0;
-                        foreach ($img as $row) {
-                            $actives = '';
-                            if ($i == 0) {
-                                $actives = 'active';
-                            }
-                        ?>
-                            <div data-toggle="modal" data-target="#exampleModal" class="carousel-full carousel-item <?php echo $actives; ?>">
-                                <img class="d-block" src="<?php echo 'images/' . $row['name']; ?>">
-                            </div>
+                <!-- Carousel Slick -->
 
-                        <?php $i++;
-                        } ?>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                <div class="responsive">
+                    <?php
+                    $i = 0;
+                    foreach ($img as $row) {
+                        $actives = '';
+                        if ($i == 0) {
+                            $actives = 'active';
+                        }
+                    ?>
+                        <div class="carousel-it" data-toggle="modal" data-target="#exampleModal">
+                            <img class="img-carousel" src="<?php echo 'images/' . $row['name']; ?>">
+                        </div>
+                    <?php $i++;
+                    } ?>
                 </div>
             </div>
+
             <div class="col-md-6">
                 <table class="table-striped">
                     <tbody>

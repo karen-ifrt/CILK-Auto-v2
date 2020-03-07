@@ -37,14 +37,14 @@ function active($currect_page)
                 <div class="topnav-content">
 
                     <div class="topnav-info">
-                        <img src="images/call.svg" alt="Téléphone">
+                        <img src="images/call.svg" alt="Téléphone CILK AUTO">
                         <a href="tel:+33472024442">
                             <p>04 72 02 44 42</p>
                         </a>
                     </div>
                     <div class="topnav-mail">
-                        <img src="images/envelope.svg" alt="Email">
-                        <a href="mailto:contact@cilk-autos.fr">cilkauto@outlook.fr</a>
+                        <img src="images/envelope.svg" alt="Email CILK AUTO">
+                        <a href="mailto:cilkauto@outlook.fr">cilkauto@outlook.fr</a>
                     </div>
                 </div>
 
@@ -54,7 +54,7 @@ function active($currect_page)
         <nav class="navbar navbar-expand-lg" id="navigation">
 
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.php"><img src="images/logo-CILK.png" alt="Logo CILK AUTO"></a>
+                <a class="navbar-brand" href="index.php"><img src="images/logo-CILK.png" alt="CILK Auto Garage Jons"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -84,11 +84,11 @@ function active($currect_page)
                     </ul>
                 </div>
                 <div class="logos-nav">
-                    <a href="https://www.fiat.fr/" target="_blank">
-                        <img class="logo-fiat" src="images/logo-fiat.png" alt="Logo FIAT">
+                    <a href="https://www.fiat.fr/" target="_blank" title="Fiat">
+                        <img class="logo-fiat" src="images/logo-fiat.png" alt="Garage FIAT Jons">
                     </a>
-                    <a href="https://www.ad.fr/" target="_blank">
-                        <img class="logo-expert" src="images/logo-expert.png" alt="Logo AD EXPERT">
+                    <a href="https://www.ad.fr/" target="_blank" title="AD Expert">
+                        <img class="logo-expert" src="images/logo-expert.png" alt="Garage AD EXPERT Jons">
                     </a>
                 </div>
             </div>

@@ -1,5 +1,5 @@
     <?php
-    $titre = "CILK AUTO | Services";
+    $titre = "Services | CILK AUTO";
     $descr = "Nos services : Réparation/Entretien, Carrosserie, Contrôle technique, Carte grise, Service à domicile, Camping-car, Vente de véhicules neufs et d'occasions.";
     $ogtitle = "CILK AUTO - Services";
     $ogurl = "https://www.cilkauto.fr/services.php";
@@ -21,7 +21,7 @@
                     <a href="entretien.php">
                         <div class="service">
                             <h4>Réparation / Entretien</h4>
-                            <img class="repair-img" src="images/car-repair.svg" alt="Réparations">
+                            <img class="repair-img" src="images/reparations-jons.svg" alt="Réparations garage Jons" width="90">
                         </div>
                     </a>
                 </div>
@@ -29,7 +29,7 @@
                 <div class="col-md-3" data-toggle="modal" data-target="#modalCarrosserie">
                     <div class="service">
                         <h4>Carrosserie</h4>
-                        <img class="card-img" src="images/car-door.svg" alt="Carrosserie">
+                        <img class="card-img" src="images/carrosserie-jons.svg" alt="Carrosserie garage Jons" width="90">
                     </div>
                 </div>
 
@@ -42,7 +42,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="image-repair">
-                                    <img src="images/entretien/carrosserie_pic.jpg" alt="Carrosserie">
+                                    <img src="images/entretien/carrosserie-jons.jpg" alt="Carrosserie jons">
                                 </div>
                                 <div class="content-repair">
                                     <p>Nous réalisons les prestations ci-dessous pour les véhicules toutes marques:</p>
@@ -71,7 +71,7 @@
                 <div class="col-md-3" data-toggle="modal" data-target="#modalControle">
                     <div class="service">
                         <h4>Contrôle technique</h4>
-                        <img src="images/car.svg" alt="Controle technique">
+                        <img src="images/controle-technique-jons.svg" alt="Controle technique Jons" width="80">
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@
                 <div class="col-md-3" data-toggle="modal" data-target="#modalCarte">
                     <div class="service">
                         <h4>Carte grise</h4>
-                        <img class="card-img" src="images/driver-license.svg" alt="Controle technique">
+                        <img class="card-img" src="images/carte-grise-jons.svg" alt="Carte grise Jons" width="90">
                     </div>
                 </div>
 
@@ -116,7 +116,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="image-repair service-carte-grise">
-                                    <img src="images/entretien/service-carte-grise.png" alt="Service carte grise">
+                                    <img src="images/entretien/service-carte-grise.png" alt="Carte grise garage Jons">
                                 </div>
                                 <div class="content-repair content-carte">
                                     <p>Le garage CILK AUTO vous propose le service carte grise qui va vous faciliter la vie !</p>
@@ -175,7 +175,7 @@
                 <div class="col-md-3" data-toggle="modal" data-target="#myModal">
                     <div class="service">
                         <h4>Service à domicile</h4>
-                        <img class="repair-img" src="images/car-restitution.svg" alt="Service à domicile">
+                        <img class="repair-img" src="images/service-domicile-jons.svg" alt="Service à domicile garage Jons" width="90">
                     </div>
                 </div>
 
@@ -183,7 +183,7 @@
                     <a href="campingcar.php">
                         <div class="service">
                             <h4>Camping-car</h4>
-                            <img src="images/caravan.svg" alt="Réparations camping-car">
+                            <img src="images/campingcar-jons.svg" alt="Réparations camping-car Jons" width="80">
                         </div>
                     </a>
                 </div>
@@ -191,7 +191,7 @@
                     <a href="https://www.fiat.fr/" target="_blank">
                         <div class="service">
                             <h4>Vente véhicules neufs</h4>
-                            <img class="card-img" src="images/fiat.svg" alt="Vente véhicules neufs">
+                            <img class="card-img" src="images/fiat-jons.svg" alt="Vente véhicules neufs garage Jons" width="90">
                         </div>
                     </a>
                 </div>
@@ -199,7 +199,7 @@
                     <a href="occasions.php">
                         <div class="service">
                             <h4>Vente véhicules d'occasions</h4>
-                            <img class="card-img" src="images/car-sale.svg" alt="Vente véhicules d'occasions">
+                            <img class="card-img" src="images/occasions-jons.svg" alt="Vente véhicules d'occasions garage Jons" width="90">
                         </div>
                     </a>
 
